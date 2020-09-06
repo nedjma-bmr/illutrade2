@@ -1,0 +1,84 @@
+.avatar{
+  background-color: #bd2c08;
+  width: 100% ;
+  height: 100% ;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue ;
+  }
+  ion-title{
+      text-align: center;
+  }
+  
+.addProd{
+font-size: 50px;
+color:#e35a1d ;
+margin-right: 10px;
+margin-top: 10px;
+float:right;
+}
+ion-button:hover{
+cursor: pointer;
+}
+
+  .ion-color-green {
+    --ion-color-base: rgb(13, 161, 187);
+      --ion-color-base-rgb: var(--ion-color-green-rgb);
+      --ion-color-contrast: var(--ion-color-green-contrast);
+      --ion-color-contrast-rgb: var(--ion-color-green-contrast-rgb);
+      --ion-color-shade: var(--ion-color-green-shade);
+      --ion-color-tint: var(--ion-color-green-tint);
+    }
+  
+    .ion-invalid.ion-touched ion-label {
+      color: var(--ion-color-danger);
+  }
+  .itm{
+    margin-top: 16px;
+  }
+  #enregisterDevis{
+    position: fixed;
+    bottom: 10px;
+    margin: 2px !important;
+    width: 96%;
+  }
+ 
+
+  .searchbar{
+    margin-top: 12px;
+  }
+  
+  .alignerTitre{
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .ionic-selectable-icon{
+    margin-top: -12px;
+  }
+  
+ ion-button:hover{
+  cursor: pointer;
+ }
+
+ .addproduit{
+  width: 60%;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  float: right;
+  
+
+ 
+ /*
+ 
+  flex-wrap: nowrap;
+  background-color: grey;
+  */
+}
+
+
+

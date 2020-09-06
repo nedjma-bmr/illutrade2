@@ -1,0 +1,42 @@
+<ion-header  >
+  <ion-toolbar>
+    <ion-title>importer un devis</ion-title>
+  
+  </ion-toolbar>
+</ion-header>
+
+<br>
+
+<h5 style="text-align: center;"> Commande № : {{this.num}} </h5>
+<h5 style="text-align: center;">{{today|date}}</h5>
+<ion-content>
+  <ion-item lines="full" class="itm">
+    <ion-label style="color: rgb(0, 0, 0);text-align: center;">Choisir le devis</ion-label>
+
+    <ionic-selectable
+      [(ngModel)]="deviscmd"
+      itemValueField="id_proforma"
+      itemTextField="num_proforma"
+      [canSearch]="true"
+      [items]="devisImporter"
+      headerColor="success"
+      (onChange)="SelectionDevisImporter($event)"
+      [ngModelOptions]="{standalone: true}"
+    >
+      <div class="ionic-selectable-icon"></div>
+      <ng-template ionicSelectableCloseButtonTemplate>
+        <ion-icon name="arrow-back"></ion-icon>
+        <ion-label>devis</ion-label>
+      </ng-template>
+    </ionic-selectable>
+  </ion-item>
+
+  <ion-col col-6 style="position: fixed;bottom:10px;justify-content: space-between;">
+   
+    <ion-button  class="my-width"  large (click)="dismiss()" >
+      <b>Annuler</b>
+    </ion-button>
+  </ion-col>
+ 
+  
+</ion-content>

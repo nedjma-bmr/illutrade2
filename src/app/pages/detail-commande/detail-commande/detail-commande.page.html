@@ -1,0 +1,71 @@
+<ion-header no-header>
+  <div class="ion-text-end">
+    <ion-button (click)="dismissModal()" fill="clear" color="dark">
+      <ion-icon name="close" slot="start"></ion-icon>
+    </ion-button>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        Commande №
+        <span style="font-size: 18px; font-weight: bold;">
+          {{cmnd.NumCmd}}
+        </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        client :
+        <span style="font-size: 18px; font-weight: bold;">
+          {{this.design_client}}
+        </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Date :
+        <span style="font-size: 18px; font-weight: bold;"> {{cmnd.date}} </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Total HT : <b>{{ this.tt_ht }}</b> 
+        <span style="font-size: 18px; font-weight: bold;"> </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Total TVA : <b>{{ this.tt_tva }}</b> 
+        <span style="font-size: 18px; font-weight: bold;"></span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Total TTC : <b>{{ this.TTC }}</b>
+        <span style="font-size: 18px; font-weight: bold;"> </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>  
+  <ion-label position = "fixed" > <h2> Remise   </h2> </ion-label>
+  <b>  ( {{this.remise}}%):</b>
+  <b>  {{this.montant_remise}}</b>
+</ion-item>
+<ion-item>  
+  <ion-label position = "fixed" > <h2> Total : </h2> </ion-label>
+  <b class="Total"> {{this.total}}</b>
+  </ion-item>
+  </ion-list>
+  <ion-button color="secondary" expand="block" (click)="voirproduitsmodal()"
+    >Voir Produits</ion-button
+  >
+ 
+
+  <ion-button color="secondary" expand="block" (click)="DownloadPdf()"
+    >Télécharger</ion-button
+  >
+
+</ion-content>
+

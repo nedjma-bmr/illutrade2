@@ -1,0 +1,33 @@
+
+
+<ion-content>
+  
+  <ion-list *ngFor="let pro of produits" style="padding: 20px;">
+    <ion-item>
+      <ion-item button>
+        <ion-thumbnail item-left style="margin-right: 10px;">
+          <ion-img
+            *ngIf="pro.image"
+            [src]="pro.image"
+            style="
+              border-radius: 50% !important ;
+              height: 55px;
+              width: 55px;
+            "
+          ></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+          <h3 style="font-size: 20px; font-weight: bold;">
+            {{pro.design_prod}}
+          </h3>
+          <p>{{ pro.pvht}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+  </ion-list>
+  
+
+  <ion-button (click)=" dismissModal() " >
+    <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+</ion-content>
